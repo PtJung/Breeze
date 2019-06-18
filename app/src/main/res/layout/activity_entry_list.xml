@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryListActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="101dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:contentDescription="@string/descTitleBar"
+            android:src="#0a7ca2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/titleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/descTitleIcon"
+            android:src="@drawable/title_icon" />
+
+        <ImageButton
+            android:id="@+id/entryAddButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/descEntryAddButton"
+            android:onClick="onEntryAddClick"
+            android:src="@drawable/add_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/entryDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/entryDescriptValue1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/entrySectionValue1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/entryTimeValue1"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/entryDescriptValue2"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/entrySectionValue2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/entryTimeValue2"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="136dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="256dp"
+        android:text="@string/entryDescriptValue3"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="244dp"
+        android:text="@string/entrySectionValue3"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="244dp"
+        android:text="@string/entryTimeValue3"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="370dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="256dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="376dp"
+        android:text="@string/entryDescriptValue4"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:text="@string/entrySectionValue4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:text="@string/entryTimeValue4"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="490dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="376dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="496dp"
+        android:text="@string/entryDescriptValue5"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="604dp"
+        android:text="@string/entrySectionValue6"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="484dp"
+        android:text="@string/entryTimeValue5"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="610dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="496dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+    <TextView
+        android:id="@+id/entryDescriptLabel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="616dp"
+        android:text="@string/entryDescriptValue6"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/entrySectionLabel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="484dp"
+        android:text="@string/entrySectionValue5"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDescriptLabel1" />
+
+    <TextView
+        android:id="@+id/entryTimeLabel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="604dp"
+        android:text="@string/entryTimeValue6"
+        android:textColor="#ffff4444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrySectionLabel1" />
+
+    <ImageButton
+        android:id="@+id/entryDeleteButton6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="730dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descEntryDeleteButton"
+        android:onClick="onEntryDeleteClick"
+        android:src="@drawable/delete_label"
+        android:tag="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/entryDivider7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="616dp"
+        android:background="#797979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTimeLabel1" />
+
+</android.support.constraint.ConstraintLayout>

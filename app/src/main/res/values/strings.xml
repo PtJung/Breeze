@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+
+    <string name="descTitleIcon">The icon of the application for aesthetic purposes.</string>
+    <string name="descTitleBar">A colored bar at the top of the window for aesthetic
+        purposes.</string>
+    <string name="descEntryAddButton">The button that is used to interact between the entry list
+        activity and the entry add activity.</string>
+    <string name="descEntryDeleteButton">The button that is used to delete an entry from the
+        list.</string>
+
+    <string name="entryDescriptValue1">Descript Value 1</string>
+    <string name="entryDescriptValue2">Descript Value 2</string>
+    <string name="entryDescriptValue3">Descript Value 3</string>
+    <string name="entryDescriptValue4">Descript Value 4</string>
+    <string name="entryDescriptValue5">Descript Value 5</string>
+    <string name="entryDescriptValue6">Descript Value 6</string>
+
+    <string name="entrySectionValue1">Section Value 1</string>
+    <string name="entrySectionValue2">Section Value 2</string>
+    <string name="entrySectionValue3">Section Value 3</string>
+    <string name="entrySectionValue4">Section Value 4</string>
+    <string name="entrySectionValue5">Section Value 5</string>
+    <string name="entrySectionValue6">Section Value 6</string>
+
+    <string name="entryTimeValue1">Time Value 1</string>
+    <string name="entryTimeValue2">Time Value 2</string>
+    <string name="entryTimeValue3">Time Value 3</string>
+    <string name="entryTimeValue4">Time Value 4</string>
+    <string name="entryTimeValue5">Time Value 5</string>
+    <string name="entryTimeValue6">Time Value 6</string>
+    <string name="descriptLabel">Description</string>
+    <string name="sectionLabel">Section</string>
+    <string name="timeLabel">Time</string>
+    <string name="finishLabel">Finish</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="entryDescriptHint" />
+    <string name="dailyToggleLabel">Daily Notification</string>
+
+    <string-array name="entrySectionArray">
+        <item>Work</item>
+        <item>Meeting</item>
+        <item>Exercise</item>
+        <item>Event</item>
+        <item>Call</item>
+        <item>Reminder</item>
+        <item>Appointment</item>
+        <item>Other</item>
+    </string-array>
+</resources>
