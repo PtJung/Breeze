@@ -1,4 +1,4 @@
-# Scheduler
+# Breeze
 An Android app aimed at scheduling short-term events for **Android 5.0 (API 21+)** tablets.
 
 <p align="center">
